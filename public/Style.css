@@ -1,0 +1,155 @@
+body {
+    background-image: url(DPLGbFRWAAI7gR_.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#Title {
+    font: bold 25px/1 arial;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 2px 0 #FF0000,
+        0 4px 0 #DC0303,
+        0 6px 0 #B40404,
+        0 8px 0 #850303,
+        0 10px 0 #470000,
+        0 12px 0 #200118,
+        3px 8px 15px rgba(0, 0, 0, 0.1),
+        3px 8px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 25px;
+
+}
+
+#Logo {
+
+    width: 50%;
+    height: 50%;
+    margin-left: 45px;
+    margin-top: 18px;
+
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-top: 30px;
+}
+
+.button {
+    padding: 15px 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #630802;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #998C8B;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.button:hover {
+    background-color: #630802
+}
+
+.button:active {
+    background-color: #630802;
+    box-shadow: 0 5px #998C8B;
+    transform: translateY(4px);
+}
+
+.Title2 {
+    color: white;
+    text-align: center;
+}
+
+#About1 {
+    background-color: #000000b3;
+    margin: 10px;
+}
+
+#About2 {
+    background-color: #000000b3;
+    margin: 10px;
+}
+
+
+.textoScroll {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    height: 260px;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.Home {
+    display: flex;
+    justify-content: center;
+}
+
+.Home2 {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+}
+
+#CalendarioClases {
+    background-color: #000000b3;
+    text-align: center;
+    margin: 10px;
+}
+
+#calendarioClases2 {
+    color: white;
+    text-align: center;
+
+}
+
+th {
+    text-align: center;
+}
+
+#CalendarioTorneos {
+    background-color: #000000b3;
+    text-align: center;
+    margin: 10px;
+}
+
+#calendarioTorneos2 {
+    color: white;
+    text-align: center;
+
+}
+
+a,
+ul {
+    color: white;
+    text-align: center;
+}
+
+#CalendarioTorneosExteriores{
+    background-color: #000000b3;
+    text-align: center;
+    margin: 10px;
+}
+#CalendarioTorneosExteriores2{
+   color: white;
+    text-align: center;
+
+}
+#contacto{
+    background-color: #000000b3;
+    text-align: center;
+    margin: 10px;
+}
+
+#contacto p{
+    color: greenyellow;
+}

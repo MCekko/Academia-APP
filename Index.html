@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="Style.css">
+    <title>Academia de eSports</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="row">
+            <div class="col-xs-6">
+                <h1 id="Title">e-Squad Academy</h1>
+            </div>
+            <div class="col-xs-6">
+                <a target="_blank" href="https://www.e-squad.es/"><img id="Logo" src="logo-e-squad.png"></a>
+            </div>
+        </div>
+        <div id="Index" class="flex-container1">
+
+            <button class="button">Nosotros</button>
+            <button class="button">Formación</button>
+            <button class="button">Calendario de Clases</button>
+            <button class="button">Calendario de Torneos</button>
+            <button class="button">Contacto</button>
+        </div>
+        <div id="About1">
+            <div class="textoScroll">
+                <h2 class="Title2">Objetivos</h2>
+                <p>{{info["Objetivos"]}}</p>
+                <h2 class="Title2">Entorno</h2>
+                <p>{{info.Entorno}}</p>
+                <h2 class="Title2">Beneficios</h2>
+                <p>{{info.Beneficios}}</p>
+                <h2 class="Title2">Team</h2>
+                <p>{{info.Team}}</p>
+            </div>
+            <a class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+        <div id="About2">
+            <div class="textoScroll">
+                <h2 class="Title2">Profesional</h2>
+                <p>{{info2["Profesional"]}}</p>
+                <h2 class="Title2">Tecnologia</h2>
+                <p>{{info2.Tecnologia}}</p>
+                <h2 class="Title2">Juegos</h2>
+                <p>{{info2.Juegos}}</p>
+            </div>
+            <a class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+        <div id="CalendarioClases">
+            <h2 class="Title2">Calendario de Clases</h2>
+            <table id="calendarioClases2" class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="clase in calendario">
+                        <td>{{clase}}</td>
+                        <td>{{calendario2}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+        <div id="CalendarioTorneos">
+            <h2 class="Title2">Calendario de Torneos</h2>
+            <table id="calendarioTorneos2" class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th v-for="torneo in Torneos">{{torneo}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td v-for="juegos in Torneos2">{{juegos}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="Title2">Torneos Exteriores</h2>
+            <ul>
+                <li v-for="(torneo,index) in TorneoExterior2"><a :data-index="index">{{torneo}}</a></li>
+            </ul>
+            <a class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+        <div id="CalendarioTorneosExteriores">
+
+        </div>
+    </div>
+    <script src="Main.js">
+    </script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDhmnluTDjCnq8bziQ59xvYGyoY5WmwFt8",
+            authDomain: "appacademy-90095.firebaseapp.com",
+            databaseURL: "https://appacademy-90095.firebaseio.com",
+            projectId: "appacademy-90095",
+            storageBucket: "appacademy-90095.appspot.com",
+            messagingSenderId: "978869901525"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+</body>

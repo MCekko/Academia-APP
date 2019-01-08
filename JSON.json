@@ -1,0 +1,63 @@
+{
+    "About": {
+        "Nosotros": {
+            "Objetivos": "e-Squad The eSports Academy nace con el objetivo de formar a jugadores de videojuegos de manera profesional. Nuestro programa especializado y metodología de enseñanza permite adquirir las competencias básicas para poder jugar en las ligas de eSports nacionales e internacionales.",
+            "Entorno": "La escuela es un lugar de aprendizaje, un lugar de encuentro para jugadores amateurs y avanzados que comparten su pasión por los videojuegos y la meta de convertirse en jugadores profesionales. La metodología de trabajo en equipo favorece la creación de lazos interpersonales y cohesión entre todos los alumnos.",
+            "Beneficios": "El desarrollo del pensamiento crítico, la capacidad de resolver problemas muy complejos, el incremento y desarrollo de la memoria, la mejora de la coordinación, la corrección de problemas de desórdenes de atención, el desarrollo de habilidades específicas como la lectura de mapas, el desarrollo de competencias como la colaboración y la comunicación, el ejercicio de la llamada ciudadanía digital y la alfabeticación T.I.C. son algunos de ellos.",
+            "Team": "El desarrollo del pensamiento crítico, la capacidad de resolver problemas muy complejos, el incremento y desarrollo de la memoria, la mejora de la coordinación, la corrección de problemas de desórdenes de atención, el desarrollo de habilidades específicas como la lectura de mapas, el desarrollo de competencias como la colaboración y la comunicación, el ejercicio de la llamada ciudadanía digital y la alfabeticación T.I.C. son algunos de ellos."
+        },
+        "Formacion": {
+            "Profesional": "En e-Squad creemos en los eSports como disciplina deportiva profesional y ofrecemos una completa formación por diferentes plataformas y videojuegos para que cada alumno desarrolle y descubra su potencial, con el objetivo de encontrar el perfil de competición que más se ajuste a sus competencias. Nuestra metodología se basa en el método del caso aplicado en las mejores escuelas de negocios del panorama internacional. Nuestro programa sigue un circuito por los principales videojuegos y plataformas utilizadas en los eSports. En cada caso, se trabajará el entrenamiento de una forma estratégica, analizando las partidas y aprendiendo las mejores acciones técnico-tácticas de cada videojuego. Durante el curso, nuestros expertos y analistas determinarán las posiciones de juego óptimas de cada alumno con el objetivo de orientarles de manera profesional. Se ofrecerá una formación enfocada a potenciar dichas habilidades y convertirlas en una ventaja competitiva para los eSports. Nuestra formación está orientada a que cada alumno encuentre la salida profesional que más encaja con sus preferencias y habilidades.",
+            "Tecnologia": "En e-Squad contamos con la misma tecnología, plataformas y equipos de PC Gaming que las ligas profesionales de eSports para que los alumnos realicen un entrenamiento deportivo profesional. Esto, unido a nuestro personal expertos en competiciones, hace que nuestra formación se convierta en un entrenamiento de élite. Los alumnos tendrán acceso a todas las instalaciones de la academia, pudiendo entrenar de forma independiente fuera del horario del curso para seguir evolucionando en su formación de gamer profesional.",
+            "Juegos": "Trabajamos con los juegos más potentes del momento, presentes en las esferas profesionales. Los alumnos probarán en la academia cada uno de ellos para que desarrollen sus habilidades en cada disciplina y experimenten los diferentes roles de equipo."
+        }
+    },
+    "CalendarioClase": {
+        "Dias": ["Lunes y Miercoles", "Martes y Jueves", "Viernes y Sabados"],
+        "Horas": ["16:30 - 18:00", "18:00 - 19:30", "19:30 - 21:00"]
+
+    },
+    "CalendarioTorneoClase": {
+        "Horas": ["16:00 - 17:00", "17:00 - 18:00", "18:00 - 19:00", "19:00 - 20:00", "20:00 - 21:00"],
+        "Juegos": ["CSgo", "Fifa19", "Tekken7", "PUBG", "Clash Royal"]
+    },
+    "CalendarioTorneosExternos": {
+        "Eventos": [{
+            "name": "SuperLigaOrange(LoL)",
+            "Fecha": "5 de Enero",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.4988242837476!2d-3.618571385103803!3d40.46422826067415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422e50d152df37%3A0x801ce4be7e7a5eec!2sIFEMA+-+Feria+de+Madrid!5e0!3m2!1ses!2ses!4v1545142809614",
+            "direcion": "Av. Partenón, Nº 5, 28042 Madrid"
+        }, {
+            "name": "CSgo Spanish League",
+            "Fecha": "1 de Febrero",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12149.286610007637!2d-3.680504830224599!3d40.423876000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228a559a82bfd%3A0x824fe75010a905e3!2sWiZink+Center!5e0!3m2!1ses!2ses!4v1545142605916",
+            "direcion": "Av. Felipe II, S/N, 28009 Madrid"
+        }, {
+            "name": "Invitacional PUBG",
+            "Fecha": "20-30 de Enero",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.4988242837476!2d-3.618571385103803!3d40.46422826067415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422e50d152df37%3A0x801ce4be7e7a5eec!2sIFEMA+-+Feria+de+Madrid!5e0!3m2!1ses!2ses!4v1545142809614",
+            "direcion": "Av. Partenón, Nº 5, 28042 Madrid"
+        }, {
+            "name": "Clash Royal League",
+            "Fecha": "10 de Enero",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12149.286610007637!2d-3.680504830224599!3d40.423876000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228a559a82bfd%3A0x824fe75010a905e3!2sWiZink+Center!5e0!3m2!1ses!2ses!4v1545142605916",
+            "direcion": "Av. Felipe II, S/N, 28009 Madrid"
+        }, {
+            "name": "Tekken League",
+            "Fecha": "5 de Enero",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.4988242837476!2d-3.618571385103803!3d40.46422826067415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422e50d152df37%3A0x801ce4be7e7a5eec!2sIFEMA+-+Feria+de+Madrid!5e0!3m2!1ses!2ses!4v1545142809614",
+            "direcion": "Av. Partenón, Nº 5, 28042 Madrid"
+        }, {
+            "name": "Fifa League",
+            "Fecha": "15 de Enero",
+            "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12149.286610007637!2d-3.680504830224599!3d40.423876000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228a559a82bfd%3A0x824fe75010a905e3!2sWiZink+Center!5e0!3m2!1ses!2ses!4v1545142605916",
+            "direcion": "Av. Felipe II, S/N, 28009 Madrid"
+        }]
+    },
+    "Contacto": {
+        "Telefono": "910646380",
+        "Email": "info@e-squad.es",
+        "Mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9550345999996!2d-3.6353289851048887!3d40.43199456263576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f6dbe9be3cd%3A0x17df83f655f4a7c0!2sAv.+de+la+Instituci%C3%B3n+Libre+de+Ense%C3%B1anza%2C+39%2C+28037+Madrid!5e0!3m2!1ses!2ses!4v1545142903201",
+        "direcion": "Av. Institución Libre de Enseñanza, 39, Piso 2 28037 Madrid"
+    }
+}

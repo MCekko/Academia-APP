@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <link rel="shortcut icon" sizes="196x196" href="logo-e-squad.png">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="Style.css">
+    <title>Academia de eSports</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="row">
+            <div class="col-xs-6">
+                <h1 id="Title">e-Squad Academy</h1>
+            </div>
+            <div class="col-xs-6">
+                <a target="_blank" href="https://www.e-squad.es/"><img id="Logo" src="logo-e-squad.png"></a>
+            </div>
+        </div>
+        <div id="Index" class="flex-container1">
+
+            <button class="button" @click="MostrarDiv('About1')">Nosotros</button>
+            <button class="button" @click="MostrarDiv('About2')">Formación</button>
+            <button class="button" @click="MostrarDiv('CalendarioClases')">Calendario de Clases</button>
+            <button class="button" @click="MostrarDiv('CalendarioTorneos')">Calendario de Torneos</button>
+            <button class="button" @click="MostrarDiv('contacto')">Contacto</button>
+        </div>
+        <div id="About1">
+            <div class="textoScroll">
+                <h2 class="Title2">Objetivos</h2>
+                <p>{{info["Objetivos"]}}</p>
+                <h2 class="Title2">Entorno</h2>
+                <p>{{info.Entorno}}</p>
+                <h2 class="Title2">Beneficios</h2>
+                <p>{{info.Beneficios}}</p>
+                <h2 class="Title2">Team</h2>
+                <p>{{info.Team}}</p>
+            </div>
+            <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+        <div id="About2">
+            <div class="textoScroll">
+                <h2 class="Title2">Profesional</h2>
+                <p>{{info2["Profesional"]}}</p>
+                <h2 class="Title2">Tecnologia</h2>
+                <p>{{info2.Tecnologia}}</p>
+                <h2 class="Title2">Juegos</h2>
+                <p>{{info2.Juegos}}</p>
+            </div>
+            <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+        <div id="CalendarioClases">
+            <h2 class="Title2">Calendario de Clases</h2>
+            <table id="calendarioClases2" class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="clase in calendario">
+                        <td>{{clase}}</td>
+                        <td>{{calendario2}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+        <div id="CalendarioTorneos">
+            <h2 class="Title2">Calendario de Torneos</h2>
+            <table id="calendarioTorneos2" class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th v-for="juegos in Torneos2">{{juegos}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td v-for="torneo in Torneos">{{torneo}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="Title2">Torneos Exteriores</h2>
+            <ul>
+                <li v-for="(torneo,index) in TorneoExterior2"><a @click="PrintTorneoExterior" :data-index="index">{{torneo}}</a></li>
+            </ul>
+            <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+        <div id="CalendarioTorneosExteriores">
+            <h2 class="Title2">Calendario de Torneos</h2>
+            <table id="CalendarioTorneosExteriores2" class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Fecha</th>
+                        <th>Direccion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >{{datosTorneo.name}}</td>
+                        <td >{{datosTorneo.Fecha}}</td>
+                        <td >{{datosTorneo.direcion}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <iframe class="maps" :src="datosTorneo.mapa"></iframe>
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+                    </div>
+                 <div class="col-xs-6">
+                    <a @click="BotonVolver('CalendarioTorneos')" class="Home"><img class="Home2" src="left-curve-arrow.png"> </a>
+                </div>
+                
+            </div>
+        </div>
+        <div id="contacto">
+            <h2 class="Title2">Contacto</h2>
+            <p>Email: <a target=_blank class="email" href="mailto:info@e-squad.es" style="text-decoration:none">info@e-squad.es</a></p>
+            <p>Telefono:<a href="tel:91 064 63 80">91 064 63 80</a></p>
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9550345999996!2d-3.6353289851048887!3d40.43199456263576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f6dbe9be3cd%3A0x17df83f655f4a7c0!2sAv.+de+la+Instituci%C3%B3n+Libre+de+Ense%C3%B1anza%2C+39%2C+28037+Madrid!5e0!3m2!1ses!2ses!4v1545142903201"></iframe>
+            <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
+    </div>
+    <script src="Main.js">
+    </script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDhmnluTDjCnq8bziQ59xvYGyoY5WmwFt8",
+            authDomain: "appacademy-90095.firebaseapp.com",
+            databaseURL: "https://appacademy-90095.firebaseio.com",
+            projectId: "appacademy-90095",
+            storageBucket: "appacademy-90095.appspot.com",
+            messagingSenderId: "978869901525"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+
+</body>
