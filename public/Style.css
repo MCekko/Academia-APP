@@ -1,155 +1,847 @@
-body {
-    background-image: url(DPLGbFRWAAI7gR_.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+
+@media only screen and (min-device-width: 300px) and (min-device-height: 600px) and (max-device-width: 500px) and (max-device-height: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+        background-image: url(DPLGbFRWAAI7gR_.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #Title {
+        font: bold 25px/1 arial;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 2px 0 #FF0000,
+            0 2px 0 #DC0303,
+            0 4px 0 #B40404,
+            0 6px 0 #850303,
+            0 8px 0 #470000,
+            0 10px 0 #200118,
+            3px 8px 15px rgba(0, 0, 0, 0.1),
+            3px 8px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 25px;
+
+    }
+
+    #Logo {
+
+        width: 50%;
+        margin-left: 45px;
+        margin-top: 18px;
+
+    }
+
+    .flex-container1 {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        margin-top: 30px;
+    }
+
+    .button {
+        padding: 11px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 125%;
+    }
+
+    .button:hover {
+        background-color: #630802
+    }
+
+    .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .Title2 {
+        color: white;
+        text-align: center;
+    }
+
+    #About1 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+    #About2 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+
+    .textoScroll {
+        color: white;
+        text-align: center;
+        margin: 10px;
+        height: 260px;
+        padding: 30px;
+        overflow-y: auto;
+    }
+
+    .Home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Home2 {
+        width: 75px;
+        height: 75px;
+        margin: 25px;
+    }
+
+    #CalendarioClases {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioClases2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    th {
+        text-align: center;
+    }
+
+    #CalendarioTorneos {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioTorneos2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    a,
+    ul {
+        color: white;
+        text-align: center;
+    }
+
+    #CalendarioTorneosExteriores {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #CalendarioTorneosExteriores2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    #contacto {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #contacto p {
+        color: greenyellow;
+    }
 }
 
-#Title {
-    font: bold 25px/1 arial;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 0 2px 0 #FF0000,
-        0 4px 0 #DC0303,
-        0 6px 0 #B40404,
-        0 8px 0 #850303,
-        0 10px 0 #470000,
-        0 12px 0 #200118,
-        3px 8px 15px rgba(0, 0, 0, 0.1),
-        3px 8px 5px rgba(0, 0, 0, 0.3);
-    margin-left: 25px;
+@media only screen and (min-device-width: 600px) and (min-device-height: 300px) and (max-device-width: 900px) and (max-device-height: 500px) and (-webkit-min-device-pixel-ratio: 2)  {
+
+    body {
+        background-image: url(DPLGbFRWAAI7gR_.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #Title {
+        font: bold 25px/2 arial;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 2px 0 #FF0000,
+            0 2px 0 #DC0303,
+            0 4px 0 #B40404,
+            0 6px 0 #850303,
+            0 8px 0 #470000,
+            0 10px 0 #200118,
+            3px 8px 15px rgba(0, 0, 0, 0.1),
+            3px 8px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 25px;
+
+    }
+
+    #Logo {
+
+        width: 30%;
+        height: 30%;
+        margin-left: 155px;
+        margin-top: 18px;
+
+    }
+
+    .flex-container1 {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 5px;
+        margin-left: 140px;
+    }
+
+    .button {
+        padding: 10px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 45px;
+        font-weight: bold;
+        font-size: 80%;
+        width: 276px;
+        margin-top: -25px;
+    }
+
+    .button:hover {
+        background-color: #630802
+    }
+
+    .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .Title2 {
+        color: white;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    #About1 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+    #About2 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+
+    .textoScroll {
+        color: white;
+        text-align: center;
+        margin: 0px;
+        height: 120px;
+        ;
+        padding: 25px;
+        overflow-y: auto;
+    }
+
+    .Home {
+        display: flex;
+        justify-content: center;
+        margin-top: -35px;
+        height: 115px;
+    }
+
+    .Home2 {
+        width: 75px;
+        height: 75px;
+        margin: 35px;
+    }
+
+    #CalendarioClases {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioClases2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    th {
+        text-align: center;
+    }
+
+    #CalendarioTorneos {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioTorneos2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    a,
+    ul {
+        color: white;
+        text-align: center;
+    }
+
+    #CalendarioTorneosExteriores {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #CalendarioTorneosExteriores2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    #contacto {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #contacto p {
+        color: greenyellow;
+    }
 
 }
 
-#Logo {
 
-    width: 50%;
-    height: 50%;
-    margin-left: 45px;
-    margin-top: 18px;
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
+
+@media only screen and (min-device-width: 200px) and (min-device-height: 500px) and (max-device-width: 400px) and (max-device-height: 800px)  {
+
+    body {
+        background-image: url(DPLGbFRWAAI7gR_.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #Title {
+        font: bold 35px/1 arial;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 2px 0 #FF0000,
+            0 2px 0 #DC0303,
+            0 4px 0 #B40404,
+            0 6px 0 #850303,
+            0 8px 0 #470000,
+            0 10px 0 #200118,
+            3px 8px 15px rgba(0, 0, 0, 0.1),
+            3px 8px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 25px;
+
+    }
+
+    #Logo {
+
+        width: 50%;
+        margin-left: 45px;
+        margin-top: 18px;
+
+    }
+
+    .flex-container1 {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        margin-top: 30px;
+    }
+
+    .button {
+        padding: 11px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 125%;
+    }
+
+    .button:hover {
+        background-color: #630802
+    }
+
+    .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .Title2 {
+        color: white;
+        text-align: center;
+    }
+
+    #About1 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+    #About2 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+
+    .textoScroll {
+        color: white;
+        text-align: center;
+        margin: 10px;
+        height: 260px;
+        padding: 30px;
+        overflow-y: auto;
+    }
+
+    .Home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Home2 {
+        width: 75px;
+        height: 75px;
+        margin: 25px;
+    }
+
+    #CalendarioClases {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioClases2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    th {
+        text-align: center;
+    }
+
+    #CalendarioTorneos {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioTorneos2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    a,
+    ul {
+        color: white;
+        text-align: center;
+    }
+
+    #CalendarioTorneosExteriores {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #CalendarioTorneosExteriores2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    #contacto {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #contacto p {
+        color: greenyellow;
+    }
 }
 
-.flex-container1 {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    margin-top: 30px;
+@media only screen and (min-device-width: 500px) and (min-device-height: 200px) and (max-device-width: 800px) and (max-device-height: 400px) {
+
+    body {
+        background-image: url(DPLGbFRWAAI7gR_.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #Title {
+        font: bold 25px/2 arial;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 2px 0 #FF0000,
+            0 2px 0 #DC0303,
+            0 4px 0 #B40404,
+            0 6px 0 #850303,
+            0 8px 0 #470000,
+            0 10px 0 #200118,
+            3px 8px 15px rgba(0, 0, 0, 0.1),
+            3px 8px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 25px;
+
+    }
+
+    #Logo {
+
+        width: 30%;
+        height: 30%;
+        margin-left: 155px;
+        margin-top: 18px;
+
+    }
+
+    .flex-container1 {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 5px;
+        margin-left: 140px;
+    }
+
+    .button {
+        padding: 10px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 45px;
+        font-weight: bold;
+        font-size: 80%;
+        width: 276px;
+        margin-top: -25px;
+    }
+
+    .button:hover {
+        background-color: #630802
+    }
+
+    .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .Title2 {
+        color: white;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    #About1 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+    #About2 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+
+    .textoScroll {
+        color: white;
+        text-align: center;
+        margin: 0px;
+        height: 120px;
+        ;
+        padding: 25px;
+        overflow-y: auto;
+    }
+
+    .Home {
+        display: flex;
+        justify-content: center;
+        margin-top: -35px;
+        height: 115px;
+    }
+
+    .Home2 {
+        width: 75px;
+        height: 75px;
+        margin: 35px;
+    }
+
+    #CalendarioClases {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioClases2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    th {
+        text-align: center;
+    }
+
+    #CalendarioTorneos {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioTorneos2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    a,
+    ul {
+        color: white;
+        text-align: center;
+    }
+
+    #CalendarioTorneosExteriores {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #CalendarioTorneosExteriores2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    #contacto {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #contacto p {
+        color: greenyellow;
+    }
 }
 
-.button {
-    padding: 15px 25px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    background-color: #630802;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #998C8B;
-    margin: 20px;
-    font-weight: bold;
-    font-size: 125%;
-}
+/* ----------- iPad Pro  ----------- */
 
-.button:hover {
-    background-color: #630802
-}
+@media only screen and (min-device-width: 900px) and (min-device-height: 1200px) and (max-device-width: 1500px) and (max-device-height: 2000px) and (-webkit-min-device-pixel-ratio: 2) {
 
-.button:active {
-    background-color: #630802;
-    box-shadow: 0 5px #998C8B;
-    transform: translateY(4px);
-}
+    body {
+        background-image: url(DPLGbFRWAAI7gR_.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
-.Title2 {
-    color: white;
-    text-align: center;
-}
+    #Title {
+        font: bold 85px/1 arial;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 2px 0 #FF0000,
+            0 4px 0 #DC0303,
+            0 6px 0 #B40404,
+            0 8px 0 #850303,
+            0 10px 0 #470000,
+            0 12px 0 #200118,
+            3px 8px 15px rgba(0, 0, 0, 0.1),
+            3px 8px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 25px;
+        margin-top: 65px;
 
-#About1 {
-    background-color: #000000b3;
-    margin: 10px;
-}
+    }
 
-#About2 {
-    background-color: #000000b3;
-    margin: 10px;
-}
+    #Logo {
+
+        width: 50%;
+        margin-left: 160px;
+        margin-top: 18px;
+
+    }
+
+    .flex-container1 {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        margin-top: 30px;
+        padding: 100px;
+    }
+
+    .button {
+        padding: 25px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 15px #998C8B;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 220%;
+    }
+
+    .button:hover {
+        background-color: #630802
+    }
+
+    .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .Title2 {
+        color: white;
+        text-align: center;
+        font-size: 80px;
+    }
+
+    #About1 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+    #About2 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
 
 
-.textoScroll {
-    color: white;
-    text-align: center;
-    margin: 10px;
-    height: 260px;
-    padding: 30px;
-    overflow-y: auto;
-}
+    .textoScroll {
+        color: white;
+        text-align: center;
+        margin: 25px;
+        height: 650px;
+        padding: 30px;
+        overflow-y: auto;
+        font-size: 45px;
+    }
 
-.Home {
-    display: flex;
-    justify-content: center;
-}
+    .Home {
+        display: flex;
+        justify-content: center;
+    }
 
-.Home2 {
-    width: 75px;
-    height: 75px;
-    margin: 25px;
-}
+    .Home2 {
+        width: 100px;
+        height: 100px;
+        margin: 25px;
+    }
 
-#CalendarioClases {
-    background-color: #000000b3;
-    text-align: center;
-    margin: 10px;
-}
+    #CalendarioClases {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 25px;
+        height: 810px;
+        padding: 30px;
+        font-size: 45px;
+    }
 
-#calendarioClases2 {
-    color: white;
-    text-align: center;
+    #calendarioClases2 {
+        color: white;
+        text-align: center;
 
-}
+    }
 
-th {
-    text-align: center;
-}
+    th {
+        text-align: center;
+    }
 
-#CalendarioTorneos {
-    background-color: #000000b3;
-    text-align: center;
-    margin: 10px;
-}
+    #CalendarioTorneos {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 25px;
+        height: 940px;
+        padding: 30px;
+        font-size: 35px;
+    }
 
-#calendarioTorneos2 {
-    color: white;
-    text-align: center;
+    #calendarioTorneos2 {
+        color: white;
+        text-align: center;
 
-}
+    }
 
-a,
-ul {
-    color: white;
-    text-align: center;
-}
+    a,
+    ul {
+        color: white;
+        text-align: center;
+    }
 
-#CalendarioTorneosExteriores{
-    background-color: #000000b3;
-    text-align: center;
-    margin: 10px;
-}
-#CalendarioTorneosExteriores2{
-   color: white;
-    text-align: center;
+    #CalendarioTorneosExteriores {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 25px;
+        height: 850px;
+        padding: 30px;
+        font-size: 35px;
+    }
 
-}
-#contacto{
-    background-color: #000000b3;
-    text-align: center;
-    margin: 10px;
-}
+    #CalendarioTorneosExteriores2 {
+        color: white;
+        text-align: center;
 
-#contacto p{
-    color: greenyellow;
+    }
+
+    #contacto {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 25px;
+        height: 810px;
+        padding: 30px;
+        font-size: 45px;
+    }
+
+    #contacto p {
+        color: greenyellow;
+    }
+
+    .maps {
+
+        width: 650px;
+        height: 325px;
+    }
 }
