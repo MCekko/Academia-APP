@@ -10,7 +10,7 @@ var app = new Vue({
         TorneoExterior: [],
         TorneoExterior2: [],
         datosTorneo: {},
-//        mapa {},
+        //        mapa {},
 
 
     },
@@ -83,32 +83,50 @@ var app = new Vue({
             var v = document.getElementById("contacto");
             v.style.display = "none";
         },
-        
+
         MostrarDiv: function (p) {
             var x = document.getElementById("Index");
             x.style.display = "none";
-            
+
             var y = document.getElementById(p);
             y.style.display = "block";
-            
+
         },
         MostrarDiv2: function (p) {
             var x = document.getElementById("CalendarioTorneos");
             x.style.display = "none";
-            
+
             var y = document.getElementById(p);
             y.style.display = "block";
-            
+
         },
-        BotonVolver: function (p){
-            
+        BotonVolver: function (p) {
+
             var x = document.getElementById("CalendarioTorneosExteriores");
             x.style.display = "none";
-            
+
             var y = document.getElementById(p);
-            
+
             y.style.display = "block";
         },
-        
+
+        login: function () {
+
+            var provider = new firebase.auth.GoogleAuthProvider();
+
+            firebase.auth().signInWithPopup(provider);
+
+            console.log("login")
+        },
+
+        logout: function () {
+
+            firebase.auth().signOut().then(function () {
+                // Sign-out successful.
+                console.log("logout")
+            }).catch(function (error) {
+                // An error happened.
+            });
+        },
     }
 })

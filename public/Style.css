@@ -1,5 +1,8 @@
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
+*{
+    padding: 0;
+    margin: 0;
+}
 
 @media only screen and (min-device-width: 300px) and (min-device-height: 600px) and (max-device-width: 500px) and (max-device-height: 900px) and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -63,6 +66,34 @@
     }
 
     .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .button2 {
+        padding: 11px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 50px;
+        font-weight: bold;
+        font-size: 125%;
+        width: 85px;
+        margin-top: -30px;
+    }
+
+    .button2:hover {
+        background-color: #630802
+    }
+
+    .button2:active {
         background-color: #630802;
         box-shadow: 0 5px #998C8B;
         transform: translateY(4px);
@@ -161,7 +192,7 @@
     }
 }
 
-@media only screen and (min-device-width: 600px) and (min-device-height: 300px) and (max-device-width: 900px) and (max-device-height: 500px) and (-webkit-min-device-pixel-ratio: 2)  {
+@media only screen and (min-device-width: 600px) and (min-device-height: 300px) and (max-device-width: 900px) and (max-device-height: 500px) and (-webkit-min-device-pixel-ratio: 2) {
 
     body {
         background-image: url(DPLGbFRWAAI7gR_.jpg);
@@ -227,6 +258,38 @@
     }
 
     .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .button2 {
+        padding: 10px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 85%;
+        width: 65px;
+        margin-top: 0px;
+        position: absolute;
+        left: 45px;
+        bottom: 115px;
+
+    }
+
+    .button2:hover {
+        background-color: #630802
+    }
+
+    .button2:active {
         background-color: #630802;
         box-shadow: 0 5px #998C8B;
         transform: translateY(4px);
@@ -334,7 +397,7 @@
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 
-@media only screen and (min-device-width: 200px) and (min-device-height: 500px) and (max-device-width: 400px) and (max-device-height: 800px)  {
+@media only screen and (min-device-width: 200px) and (min-device-height: 500px) and (max-device-width: 400px) and (max-device-height: 800px) {
 
     body {
         background-image: url(DPLGbFRWAAI7gR_.jpg);
@@ -396,6 +459,34 @@
     }
 
     .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .button2 {
+        padding: 11px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 50px;
+        font-weight: bold;
+        font-size: 125%;
+        width: 85px;
+        margin-top: -30px;
+    }
+
+    .button2:hover {
+        background-color: #630802
+    }
+
+    .button2:active {
         background-color: #630802;
         box-shadow: 0 5px #998C8B;
         transform: translateY(4px);
@@ -565,6 +656,38 @@
         transform: translateY(4px);
     }
 
+    .button2 {
+        padding: 10px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 85%;
+        width: 65px;
+        margin-top: 0px;
+        position: absolute;
+        left: 45px;
+        bottom: 115px;
+
+    }
+
+    .button2:hover {
+        background-color: #630802
+    }
+
+    .button2:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
     .Title2 {
         color: white;
         text-align: center;
@@ -728,6 +851,34 @@
     }
 
     .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .button2 {
+        padding: 11px 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 15px #998C8B;
+        margin: 155px;
+        font-weight: bold;
+        font-size: 300%;
+        width: 170px;
+        margin-top: -45px;
+    }
+
+    .button2:hover {
+        background-color: #630802
+    }
+
+    .button2:active {
         background-color: #630802;
         box-shadow: 0 5px #998C8B;
         transform: translateY(4px);

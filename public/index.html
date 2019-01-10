@@ -5,9 +5,9 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <meta name="mobile-web-app-capable" content="yes" />
-    
+
     <link rel="shortcut icon" sizes="196x196" href="logo-e-squad.png">
 
 
@@ -40,6 +40,9 @@
             <button class="button" @click="MostrarDiv('CalendarioClases')">Calendario de Clases</button>
             <button class="button" @click="MostrarDiv('CalendarioTorneos')">Calendario de Torneos</button>
             <button class="button" @click="MostrarDiv('contacto')">Contacto</button>
+        </div>
+        <div><button class="button2" @click="login()">Login</button>
+            <button class="button2" @click="logout()">Logout</button>
         </div>
         <div id="About1">
             <div class="textoScroll">
@@ -115,9 +118,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td >{{datosTorneo.name}}</td>
-                        <td >{{datosTorneo.Fecha}}</td>
-                        <td >{{datosTorneo.direcion}}</td>
+                        <td>{{datosTorneo.name}}</td>
+                        <td>{{datosTorneo.Fecha}}</td>
+                        <td>{{datosTorneo.direcion}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -125,11 +128,11 @@
             <div class="row">
                 <div class="col-xs-6">
                     <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
-                    </div>
-                 <div class="col-xs-6">
+                </div>
+                <div class="col-xs-6">
                     <a @click="BotonVolver('CalendarioTorneos')" class="Home"><img class="Home2" src="left-curve-arrow.png"> </a>
                 </div>
-                
+
             </div>
         </div>
         <div id="contacto">
