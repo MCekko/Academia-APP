@@ -156,6 +156,18 @@ var app = new Vue({
             // https://firebase.google.com/docs/database/web/read-and-write
             // Values
             var text = this.mensaje;
+            
+            // filtro de contenido
+            if (text.length == 0)
+                return;
+            if (text.trim().length == 0)
+                return;
+            if (text.includes("joder"))
+                {
+                    alert("Este chat no permite palabras ofensivas");
+                    return;
+                }
+            
             //mensaje//
             var userName = firebase.auth().currentUser.displayName;
             // funcion de firebase//
