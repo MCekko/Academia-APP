@@ -10,8 +10,7 @@ var app = new Vue({
         TorneoExterior: [],
         TorneoExterior2: [],
         datosTorneo: {},
-        //        mapa {},
-
+        mensaje: "",
 
     },
     created: function () {
@@ -82,6 +81,12 @@ var app = new Vue({
             n.style.display = "none";
             var v = document.getElementById("contacto");
             v.style.display = "none";
+            var q = document.getElementById("Index2");
+            q.style.display = "none";
+            var a = document.getElementById("botonChat");
+            a.style.display = "none";
+            var b = document.getElementById("Chat");
+            b.style.display = "none";
         },
 
         MostrarDiv: function (p) {
@@ -111,6 +116,16 @@ var app = new Vue({
         },
 
         login: function () {
+            var x = document.getElementById("login2");
+            x.style.display = "none";
+
+            var y = document.getElementById("Index2");
+            y.style.display = "block";
+            var x = document.getElementById("login2");
+            x.style.display = "none";
+
+            var y = document.getElementById("botonChat");
+            y.style.display = "block";
 
             var provider = new firebase.auth.GoogleAuthProvider();
 
@@ -120,6 +135,11 @@ var app = new Vue({
         },
 
         logout: function () {
+            var x = document.getElementById("Index2");
+            x.style.display = "none";
+
+            var y = document.getElementById("login2");
+            y.style.display = "block";
 
             firebase.auth().signOut().then(function () {
                 // Sign-out successful.
@@ -128,5 +148,70 @@ var app = new Vue({
                 // An error happened.
             });
         },
+
+
+
+        writeNewPost: function () {
+
+            // https://firebase.google.com/docs/database/web/read-and-write
+            // Values
+            var text = this.mensaje;
+            //mensaje//
+            var userName = firebase.auth().currentUser.displayName;
+            // funcion de firebase//
+
+            // A post entry
+
+            var post = {
+                name: userName,
+                text: text
+            };
+
+            // Get a key for a new Post.
+            var newPostKey = firebase.database().ref().child('General').push().key;
+
+            //Write data
+            var updates = {};
+            updates[newPostKey] = post;
+
+            return firebase.database().ref('General').update(updates);
+
+        },
+
+
+        getPosts: function () {
+
+            this.writeNewPost();
+            firebase.database().ref('General').on('value', function (data) {
+
+                //div donde esta mi sala de chat
+                var posts = document.getElementById("PushText");
+
+
+                posts.innerHTML = "";
+
+                var messages = data.val();
+
+                for (var key in messages) {
+
+                    var userName = firebase.auth().currentUser.displayName;
+                    var text = document.createElement("div");
+                    var element = messages[key];
+
+                    text.append(userName + ":" + " " + element.text);
+                    posts.append(text);
+                    document.getElementById("PushText").scrollTop = document.getElementById("PushText").scrollHeight
+                }
+
+            })
+
+            var borrarInput = document.getElementById("mensaje2");
+            borrarInput.value = "";
+            this.mensaje = "";
+
+            console.log("getting posts");
+
+        },
+
     }
 })

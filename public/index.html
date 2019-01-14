@@ -40,9 +40,9 @@
             <button class="button" @click="MostrarDiv('CalendarioClases')">Calendario de Clases</button>
             <button class="button" @click="MostrarDiv('CalendarioTorneos')">Calendario de Torneos</button>
             <button class="button" @click="MostrarDiv('contacto')">Contacto</button>
-        </div>
-        <div><button class="button2" @click="login()">Login</button>
-            <button class="button2" @click="logout()">Logout</button>
+            <button id="login2" class="button2" @click="login()">Login</button>
+            <button id="Index2" class="button2" @click="logout()">Logout</button>
+            <a id="botonChat" class="Chat" @click="MostrarDiv('Chat')"><img class="chat2" src="bocadillo.png"> </a>
         </div>
         <div id="About1">
             <div class="textoScroll">
@@ -142,7 +142,21 @@
             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9550345999996!2d-3.6353289851048887!3d40.43199456263576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f6dbe9be3cd%3A0x17df83f655f4a7c0!2sAv.+de+la+Instituci%C3%B3n+Libre+de+Ense%C3%B1anza%2C+39%2C+28037+Madrid!5e0!3m2!1ses!2ses!4v1545142903201"></iframe>
             <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
         </div>
+        <div id="Chat">
+            <div id="PushText">
+
+
+            </div>
+            <div>
+                <div id="mensaje">
+                    <input id="mensaje2" v-model="mensaje" type="text" placeholder="Escribir">
+                    <button class="boton2" @click="getPosts()">Enviar</button>
+                </div>
+            </div>
+            <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
+        </div>
     </div>
+
     <script src="Main.js">
     </script>
 
@@ -161,5 +175,4 @@
         firebase.initializeApp(config);
 
     </script>
-
 </body>

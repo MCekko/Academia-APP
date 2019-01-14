@@ -1,5 +1,5 @@
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -82,11 +82,10 @@
         border: none;
         border-radius: 15px;
         box-shadow: 0 9px #998C8B;
-        margin: 50px;
+        margin: 25px;
         font-weight: bold;
         font-size: 125%;
         width: 85px;
-        margin-top: -30px;
     }
 
     .button2:hover {
@@ -189,6 +188,27 @@
 
     #contacto p {
         color: greenyellow;
+    }
+
+    .chat2 {
+        width: 75px;
+        position: absolute;
+        bottom: 80px;
+        right: 75px;
+    }
+
+    #PushText {
+        background-color: #000000b3;
+        margin: 20px;
+        width: 380px;
+        height: 400px;
+        color: white;
+        overflow-y: scroll;
+    }
+
+    #mensaje {
+        margin: 25px;
+        text-align: center;
     }
 }
 
@@ -317,7 +337,6 @@
         text-align: center;
         margin: 0px;
         height: 120px;
-        ;
         padding: 25px;
         overflow-y: auto;
     }
@@ -391,6 +410,26 @@
         color: greenyellow;
     }
 
+    .chat2 {
+        width: 75px;
+        position: absolute;
+        top: 130px;
+        left: 60px;
+    }
+
+    #PushText {
+        background-color: #000000b3;
+        width: 400px;
+        height: 200px;
+        margin-left: 150px;
+        color: white;
+        overflow-y: scroll;
+    }
+
+    #mensaje {
+        margin: 25px;
+        text-align: center;
+    }
 }
 
 
@@ -475,11 +514,11 @@
         border: none;
         border-radius: 15px;
         box-shadow: 0 9px #998C8B;
-        margin: 50px;
+        margin: 15px;
         font-weight: bold;
         font-size: 125%;
         width: 85px;
-        margin-top: -30px;
+
     }
 
     .button2:hover {
@@ -582,6 +621,28 @@
 
     #contacto p {
         color: greenyellow;
+    }
+
+    .chat2 {
+        width: 75px;
+
+        position: absolute;
+        bottom: 80px;
+        right: 75px;
+    }
+
+    #PushText {
+        background-color: #000000b3;
+        margin: 20px;
+        width: 380px;
+        height: 400px;
+        color: white;
+        overflow-y: scroll;
+    }
+
+    #mensaje {
+        margin: 25px;
+        text-align: center;
     }
 }
 
@@ -783,6 +844,27 @@
     #contacto p {
         color: greenyellow;
     }
+
+    .chat2 {
+        width: 75px;
+        position: absolute;
+        top: 130px;
+        left: 60px;
+    }
+
+    #PushText {
+        background-color: #000000b3;
+        width: 400px;
+        height: 200px;
+        margin-left: 150px;
+        color: white;
+        overflow-y: scroll;
+    }
+
+    #mensaje {
+        margin: 25px;
+        text-align: center;
+    }
 }
 
 /* ----------- iPad Pro  ----------- */
@@ -867,11 +949,10 @@
         border: none;
         border-radius: 15px;
         box-shadow: 0 15px #998C8B;
-        margin: 155px;
+        margin: 20px;
         font-weight: bold;
         font-size: 300%;
         width: 170px;
-        margin-top: -45px;
     }
 
     .button2:hover {
@@ -994,5 +1075,41 @@
 
         width: 650px;
         height: 325px;
+    }
+
+    .chat2 {
+        width: 115px;
+        position: absolute;
+        bottom: 165px;
+        right: 215px;
+    }
+
+    #PushText {
+        background-color: #000000b3;
+        margin: 90px;
+        width: 800px;
+        height: 800px;
+        color: white;
+        overflow-y: scroll;
+    }
+
+    #mensaje {
+        margin: 10px;
+
+    }
+
+    #mensaje2 {
+        width: 500px;
+        height: 50px;
+        margin-left: 80px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .boton2 {
+        width: 120px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
     }
 }
