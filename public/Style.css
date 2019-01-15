@@ -4,6 +4,212 @@
     margin: 0;
 }
 
+body {
+    background-image: url(DPLGbFRWAAI7gR_.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#Title {
+    font: bold 25px/1 arial;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 2px 0 #FF0000,
+        0 2px 0 #DC0303,
+        0 4px 0 #B40404,
+        0 6px 0 #850303,
+        0 8px 0 #470000,
+        0 10px 0 #200118,
+        3px 8px 15px rgba(0, 0, 0, 0.1),
+        3px 8px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 25px;
+    margin-top: 85px;
+
+}
+
+#Logo {
+
+    width: 25%;
+    margin-left: 200px;
+    margin-top: 20px;
+
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-top: 30px;
+}
+
+.button {
+    padding: 11px 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #630802;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #998C8B;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.button:hover {
+    background-color: #630802
+}
+
+.button:active {
+    background-color: #630802;
+    box-shadow: 0 5px #998C8B;
+    transform: translateY(4px);
+}
+
+.button2 {
+    padding: 11px 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #630802;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #998C8B;
+    margin: 25px;
+    font-weight: bold;
+    font-size: 125%;
+    width: 85px;
+}
+
+.button2:hover {
+    background-color: #630802
+}
+
+.button2:active {
+    background-color: #630802;
+    box-shadow: 0 5px #998C8B;
+    transform: translateY(4px);
+}
+
+.Title2 {
+    color: white;
+    text-align: center;
+}
+
+#About1 {
+    background-color: #000000b3;
+    margin: 10px;
+}
+
+#About2 {
+    background-color: #000000b3;
+    margin: 10px;
+}
+
+
+.textoScroll {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    height: 260px;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.Home {
+    display: flex;
+    justify-content: center;
+}
+
+.Home2 {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+}
+
+#CalendarioClases {
+    background-color: #000000b3;
+    text-align: center;
+    margin: 10px;
+}
+
+#calendarioClases2 {
+    color: white;
+    text-align: center;
+
+}
+
+th {
+    text-align: center;
+}
+
+#CalendarioTorneos {
+    background-color: #000000b3;
+    text-align: center;
+    margin: 10px;
+}
+
+#calendarioTorneos2 {
+    color: white;
+    text-align: center;
+
+}
+
+a,
+ul {
+    color: white;
+    text-align: center;
+}
+
+#CalendarioTorneosExteriores {
+    background-color: #000000b3;
+    text-align: center;
+    margin: 10px;
+}
+
+#CalendarioTorneosExteriores2 {
+    color: white;
+    text-align: center;
+
+}
+
+#contacto {
+    background-color: #000000b3;
+    text-align: center;
+    margin: 10px;
+}
+
+#contacto p {
+    color: greenyellow;
+}
+
+.chat2 {
+    width: 75px;
+    position: absolute;
+    bottom: 50px;
+    right: 175px;
+}
+
+#PushText {
+    background-color: #000000b3;
+    margin: 20px;
+    width: 95%;
+    height: 400px;
+    color: white;
+    overflow-y: scroll;
+}
+
+#mensaje {
+    margin: 25px;
+    text-align: center;
+}
+
 @media only screen and (min-device-width: 300px) and (min-device-height: 600px) and (max-device-width: 500px) and (max-device-height: 900px) and (-webkit-min-device-pixel-ratio: 2) {
 
     body {
@@ -27,7 +233,8 @@
             3px 8px 15px rgba(0, 0, 0, 0.1),
             3px 8px 5px rgba(0, 0, 0, 0.3);
         margin-left: 25px;
-
+        position: absolute;
+        top: -50px;
     }
 
     #Logo {
@@ -193,7 +400,7 @@
     .chat2 {
         width: 75px;
         position: absolute;
-        bottom: 80px;
+        bottom: 60px;
         right: 75px;
     }
 
@@ -235,7 +442,8 @@
             3px 8px 15px rgba(0, 0, 0, 0.1),
             3px 8px 5px rgba(0, 0, 0, 0.3);
         margin-left: 25px;
-
+        position: absolute;
+        top: -65px;
     }
 
     #Logo {
@@ -459,7 +667,8 @@
             3px 8px 15px rgba(0, 0, 0, 0.1),
             3px 8px 5px rgba(0, 0, 0, 0.3);
         margin-left: 25px;
-
+        position: absolute;
+        top: -55px;
     }
 
     #Logo {
@@ -627,14 +836,14 @@
         width: 75px;
 
         position: absolute;
-        bottom: 80px;
+        bottom: 15px;
         right: 75px;
     }
 
     #PushText {
         background-color: #000000b3;
         margin: 20px;
-        width: 380px;
+        width: 90%;
         height: 400px;
         color: white;
         overflow-y: scroll;
@@ -669,7 +878,8 @@
             3px 8px 15px rgba(0, 0, 0, 0.1),
             3px 8px 5px rgba(0, 0, 0, 0.3);
         margin-left: 25px;
-
+        position: absolute;
+        top: -60px;
     }
 
     #Logo {
@@ -846,10 +1056,10 @@
     }
 
     .chat2 {
+        left: 500px;
         width: 75px;
         position: absolute;
-        top: 130px;
-        left: 60px;
+        top: 160px;
     }
 
     #PushText {
@@ -1112,4 +1322,225 @@
         font-size: 30px;
         text-align: center;
     }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-device-height: 900px) and (max-device-width: 2000px) and (max-device-height: 1500px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+        background-image: url(DPLGbFRWAAI7gR_.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #Title {
+        font: bold 60px/2 arial;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 2px 0 #FF0000,
+            0 2px 0 #DC0303,
+            0 4px 0 #B40404,
+            0 6px 0 #850303,
+            0 8px 0 #470000,
+            0 10px 0 #200118,
+            3px 8px 15px rgba(0, 0, 0, 0.1),
+            3px 8px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 25px;
+        position: absolute;
+        top: -60px;
+    }
+
+    #Logo {
+
+        width: 30%;
+        height: 30%;
+        margin-left: 235px;
+        margin-top: 20px;
+
+    }
+
+    .flex-container1 {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 5px;
+        margin-left: 140px;
+    }
+
+    .button {
+        padding: 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 45px;
+        font-weight: bold;
+        font-size: 40px;
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .button:hover {
+        background-color: #630802
+    }
+
+    .button:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .button2 {
+        padding: 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #630802;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #998C8B;
+        margin: 45px;
+        font-weight: bold;
+        font-size: 40px;
+        width: 15%;
+        margin-top: 15px;
+        position: absolute;
+        left: 140px;
+        bottom: 115px;
+    }
+
+    .button2:hover {
+        background-color: #630802
+    }
+
+    .button2:active {
+        background-color: #630802;
+        box-shadow: 0 5px #998C8B;
+        transform: translateY(4px);
+    }
+
+    .Title2 {
+        color: white;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    #About1 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+    #About2 {
+        background-color: #000000b3;
+        margin: 10px;
+    }
+
+
+    .textoScroll {
+        color: white;
+        text-align: center;
+        margin: 0px;
+        height: 120px;
+        ;
+        padding: 25px;
+        overflow-y: auto;
+    }
+
+    .Home {
+        display: flex;
+        justify-content: center;
+        margin-top: -35px;
+        height: 115px;
+    }
+
+    .Home2 {
+        width: 75px;
+        height: 75px;
+        margin: 35px;
+    }
+
+    #CalendarioClases {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioClases2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    th {
+        text-align: center;
+    }
+
+    #CalendarioTorneos {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #calendarioTorneos2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    a,
+    ul {
+        color: white;
+        text-align: center;
+    }
+
+    #CalendarioTorneosExteriores {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #CalendarioTorneosExteriores2 {
+        color: white;
+        text-align: center;
+
+    }
+
+    #contacto {
+        background-color: #000000b3;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #contacto p {
+        color: greenyellow;
+    }
+
+    .chat2 {
+        width: 110px;
+        position: absolute;
+        bottom: 120px;
+    }
+
+    #PushText {
+        background-color: #000000b3;
+        width: 400px;
+        height: 200px;
+        margin-left: 150px;
+        color: white;
+        overflow-y: scroll;
+    }
+
+    #mensaje {
+        margin: 25px;
+        text-align: center;
+    }
+
 }
