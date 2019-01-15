@@ -194,6 +194,7 @@ var app = new Vue({
         getPosts: function () {
 
             this.writeNewPost();
+            document.getElementById("PushText").scrollTop = document.getElementById("PushText").scrollHeightz;
             firebase.database().ref('General').on('value', function (data) {
 
                 //div donde esta mi sala de chat
@@ -210,9 +211,11 @@ var app = new Vue({
                     var text = document.createElement("div");
                     var element = messages[key];
 
-                    text.append(userName + ":" + " " + element.text);
+                    text.append(element.name + ":" + " " + element.text);
                     posts.append(text);
-                    document.getElementById("PushText").scrollTop = document.getElementById("PushText").scrollHeight
+                    
+                    document.getElementById("PushText").scrollTop = document.getElementById("PushText").scrollHeightz;
+                    
                 }
 
             })
@@ -227,3 +230,4 @@ var app = new Vue({
 
     }
 })
+// css para cortar palabra//

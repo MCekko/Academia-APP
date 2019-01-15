@@ -34,15 +34,24 @@
             </div>
         </div>
         <div id="Index" class="flex-container1">
-
-            <button class="button" @click="MostrarDiv('About1')">Nosotros</button>
+            <div id="botones">
+                  <button class="button" @click="MostrarDiv('About1')">Nosotros</button>
             <button class="button" @click="MostrarDiv('About2')">Formación</button>
             <button class="button" @click="MostrarDiv('CalendarioClases')">Calendario de Clases</button>
             <button class="button" @click="MostrarDiv('CalendarioTorneos')">Calendario de Torneos</button>
             <button class="button" @click="MostrarDiv('contacto')">Contacto</button>
-            <button id="login2" class="button2" @click="login()">Login</button>
+            
+            </div>
+          
+            <div id="botones2">
+                <div>
+                       <button id="login2" class="button2" @click="login()">Login</button>
             <button id="Index2" class="button2" @click="logout()">Logout</button>
-            <a id="botonChat" class="Chat" @click="MostrarDiv('Chat')"><img class="chat2" src="bocadillo.png"> </a>
+                </div>
+             
+            <a id="botonChat" class="Chat" @click="MostrarDiv('Chat')"><img class="chat2" src="206461-48.png"> </a>
+            </div>
+            
         </div>
         <div id="About1">
             <div class="textoScroll">
@@ -150,7 +159,7 @@
             <div>
                 <div id="mensaje">
                     <input id="mensaje2" v-model="mensaje" type="text" placeholder="Escribir">
-                    <button class="boton2" @click="getPosts()">Enviar</button>
+                    <button class="button2" @click="getPosts()">Enviar</button>
                 </div>
             </div>
             <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>

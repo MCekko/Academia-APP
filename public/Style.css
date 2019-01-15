@@ -44,6 +44,16 @@ body {
     margin-top: 30px;
 }
 
+#botones {
+    display: flex;
+    flex-direction: column;
+}
+
+#botones2 {
+    display: flex;
+    justify-content: space-around;
+}
+
 .button {
     padding: 11px 5px;
     cursor: pointer;
@@ -191,9 +201,6 @@ ul {
 
 .chat2 {
     width: 75px;
-    position: absolute;
-    bottom: 50px;
-    right: 175px;
 }
 
 #PushText {
@@ -203,11 +210,26 @@ ul {
     height: 400px;
     color: white;
     overflow-y: scroll;
+    font-size: 100%;
 }
 
 #mensaje {
     margin: 25px;
     text-align: center;
+}
+
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border-color: red;
+    box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
 @media only screen and (min-device-width: 300px) and (min-device-height: 600px) and (max-device-width: 500px) and (max-device-height: 900px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -250,6 +272,16 @@ ul {
         flex-direction: column;
         margin: 30px;
         margin-top: 30px;
+    }
+
+    #botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botones2 {
+        display: flex;
+        justify-content: space-around;
     }
 
     .button {
@@ -399,9 +431,6 @@ ul {
 
     .chat2 {
         width: 75px;
-        position: absolute;
-        bottom: 60px;
-        right: 75px;
     }
 
     #PushText {
@@ -411,11 +440,26 @@ ul {
         height: 400px;
         color: white;
         overflow-y: scroll;
+        font-size: 100%;
     }
 
     #mensaje {
         margin: 25px;
         text-align: center;
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type=text]:focus {
+        border-color: red;
+        box-shadow: 0 0 8px 0 dodgerBlue;
     }
 }
 
@@ -463,6 +507,16 @@ ul {
         margin-left: 140px;
     }
 
+    #botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botones2 {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .button {
         padding: 10px 5px;
         cursor: pointer;
@@ -507,9 +561,6 @@ ul {
         font-size: 85%;
         width: 65px;
         margin-top: 0px;
-        position: absolute;
-        left: 45px;
-        bottom: 115px;
 
     }
 
@@ -621,8 +672,7 @@ ul {
     .chat2 {
         width: 75px;
         position: absolute;
-        top: 130px;
-        left: 60px;
+        bottom: 130px
     }
 
     #PushText {
@@ -632,11 +682,26 @@ ul {
         margin-left: 150px;
         color: white;
         overflow-y: scroll;
+        font-size: 100%;
     }
 
     #mensaje {
         margin: 25px;
         text-align: center;
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type=text]:focus {
+        border-color: red;
+        box-shadow: 0 0 8px 0 dodgerBlue;
     }
 }
 
@@ -684,6 +749,16 @@ ul {
         flex-direction: column;
         margin: 30px;
         margin-top: 30px;
+    }
+
+    #botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botones2 {
+        display: flex;
+        justify-content: space-around;
     }
 
     .button {
@@ -834,10 +909,6 @@ ul {
 
     .chat2 {
         width: 75px;
-
-        position: absolute;
-        bottom: 15px;
-        right: 75px;
     }
 
     #PushText {
@@ -847,11 +918,26 @@ ul {
         height: 400px;
         color: white;
         overflow-y: scroll;
+        font-size: 100%;
     }
 
     #mensaje {
         margin: 25px;
         text-align: center;
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type=text]:focus {
+        border-color: red;
+        box-shadow: 0 0 8px 0 dodgerBlue;
     }
 }
 
@@ -899,6 +985,16 @@ ul {
         margin-left: 140px;
     }
 
+    #botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botones2 {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .button {
         padding: 10px 5px;
         cursor: pointer;
@@ -943,9 +1039,6 @@ ul {
         font-size: 85%;
         width: 65px;
         margin-top: 0px;
-        position: absolute;
-        left: 45px;
-        bottom: 115px;
 
     }
 
@@ -1056,10 +1149,9 @@ ul {
     }
 
     .chat2 {
-        left: 500px;
         width: 75px;
         position: absolute;
-        top: 160px;
+        bottom: 130px
     }
 
     #PushText {
@@ -1069,11 +1161,26 @@ ul {
         margin-left: 150px;
         color: white;
         overflow-y: scroll;
+        font-size: 100%;
     }
 
     #mensaje {
         margin: 25px;
         text-align: center;
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type=text]:focus {
+        border-color: red;
+        box-shadow: 0 0 8px 0 dodgerBlue;
     }
 }
 
@@ -1120,6 +1227,16 @@ ul {
         margin: 30px;
         margin-top: 30px;
         padding: 100px;
+    }
+
+    #botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botones2 {
+        display: flex;
+        justify-content: space-around;
     }
 
     .button {
@@ -1288,10 +1405,7 @@ ul {
     }
 
     .chat2 {
-        width: 115px;
-        position: absolute;
-        bottom: 165px;
-        right: 215px;
+        width: 75px;
     }
 
     #PushText {
@@ -1301,6 +1415,7 @@ ul {
         height: 800px;
         color: white;
         overflow-y: scroll;
+        font-size: 100%;
     }
 
     #mensaje {
@@ -1321,6 +1436,20 @@ ul {
         height: 50px;
         font-size: 30px;
         text-align: center;
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type=text]:focus {
+        border-color: red;
+        box-shadow: 0 0 8px 0 dodgerBlue;
     }
 }
 
@@ -1368,6 +1497,16 @@ ul {
         margin-left: 140px;
     }
 
+    #botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botones2 {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .button {
         padding: 0px 0px;
         cursor: pointer;
@@ -1412,9 +1551,6 @@ ul {
         font-size: 40px;
         width: 15%;
         margin-top: 15px;
-        position: absolute;
-        left: 140px;
-        bottom: 115px;
     }
 
     .button2:hover {
@@ -1524,9 +1660,9 @@ ul {
     }
 
     .chat2 {
-        width: 110px;
+        width: 75px;
         position: absolute;
-        bottom: 120px;
+        bottom: 130px
     }
 
     #PushText {
@@ -1536,11 +1672,26 @@ ul {
         margin-left: 150px;
         color: white;
         overflow-y: scroll;
+        font-size: 100%;
     }
 
     #mensaje {
         margin: 25px;
         text-align: center;
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type=text]:focus {
+        border-color: red;
+        box-shadow: 0 0 8px 0 dodgerBlue;
     }
 
 }
