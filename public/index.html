@@ -35,11 +35,11 @@
         </div>
         <div id="Index" class="flex-container1">
             <div id="botones">
-                  <button class="button" @click="MostrarDiv('About1')">Nosotros</button>
-            <button class="button" @click="MostrarDiv('About2')">Formación</button>
-            <button class="button" @click="MostrarDiv('CalendarioClases')">Calendario de Clases</button>
-            <button class="button" @click="MostrarDiv('CalendarioTorneos')">Calendario de Torneos</button>
-            <button class="button" @click="MostrarDiv('contacto')">Contacto</button>
+                  <button class="button" @click="ShowDiv('Index', 'About1')">Nosotros</button>
+            <button class="button" @click="ShowDiv('Index', 'About2')">Formación</button>
+            <button class="button" @click="ShowDiv('Index', 'CalendarioClases')">Calendario de Clases</button>
+            <button class="button" @click="ShowDiv('Index', 'CalendarioTorneos')">Calendario de Torneos</button>
+            <button class="button" @click="ShowDiv('Index', 'contacto')">Contacto</button>
             
             </div>
           
@@ -49,7 +49,7 @@
             <button id="Index2" class="button2" @click="logout()">Logout</button>
                 </div>
              
-            <a id="botonChat" class="Chat" @click="MostrarDiv('Chat')"><img class="chat2" src="206461-48.png"> </a>
+            <a id="botonChat" class="Chat" @click="ShowDiv('Index', 'Chat')"><img class="chat2" src="206461-48.png"> </a>
             </div>
             
         </div>
@@ -139,7 +139,7 @@
                     <a href="index.html" class="Home"><img class="Home2" src="home-icon-silhouette.png"> </a>
                 </div>
                 <div class="col-xs-6">
-                    <a @click="BotonVolver('CalendarioTorneos')" class="Home"><img class="Home2" src="left-curve-arrow.png"> </a>
+                    <a @click="ShowDiv('CalendarioTorneosExteriores', 'CalendarioTorneos')" class="Home"><img class="Home2" src="left-curve-arrow.png"> </a>
                 </div>
 
             </div>

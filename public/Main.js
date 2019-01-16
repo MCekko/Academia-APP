@@ -16,7 +16,7 @@ var app = new Vue({
     created: function () {
         this.getData();
         this.PrintName();
-        this.OcultarDiv();
+        this.hideDiv();
     },
     methods: {
 
@@ -63,12 +63,12 @@ var app = new Vue({
 
                 }
             }
-            this.MostrarDiv2('CalendarioTorneosExteriores')
+            this.ShowDiv('CalendarioTorneos', 'CalendarioTorneosExteriores')
             console.log(app.datosTorneo);
 
         },
 
-        OcultarDiv: function () {
+        hideDiv: function () {
             var x = document.getElementById("About1");
             x.style.display = "none";
             var y = document.getElementById("About2");
@@ -89,30 +89,13 @@ var app = new Vue({
             b.style.display = "none";
         },
 
-        MostrarDiv: function (p) {
-            var x = document.getElementById("Index");
+        ShowDiv: function (p, b) {
+            var x = document.getElementById(p);
             x.style.display = "none";
 
-            var y = document.getElementById(p);
+            var y = document.getElementById(b);
             y.style.display = "block";
 
-        },
-        MostrarDiv2: function (p) {
-            var x = document.getElementById("CalendarioTorneos");
-            x.style.display = "none";
-
-            var y = document.getElementById(p);
-            y.style.display = "block";
-
-        },
-        BotonVolver: function (p) {
-
-            var x = document.getElementById("CalendarioTorneosExteriores");
-            x.style.display = "none";
-
-            var y = document.getElementById(p);
-
-            y.style.display = "block";
         },
 
         login: function () {
